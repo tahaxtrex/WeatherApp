@@ -27,11 +27,51 @@ body {
     border-radius: 15px;
     left: auto;
     box-shadow: 1px 5px 5px;
+    padding: 45px;
+    padding-right: 60px;
+    padding-left: 60px;
+    min-height: 15%;
+    max-height: 30%;
+    transition: 1.5s;
+}
+
+#maincard:hover{
+    background: linear-gradient(90deg, #5257fa, #915af7);
+    display: inline-block;
+    position: relative;
+    top: 30%;
+    border-radius: 15px;
+    left: auto;
+    box-shadow: 1px 5px 8px;
     padding: 40px;
     padding-right: 60px;
     padding-left: 60px;
-    min-height: 10%;
-    max-height: 30%;
+    min-height: 17%;
+    max-height: 35%;
+    transition: 1.5s;
+
+}
+
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.show {
+  max-height: 350px; 
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 30%;
+}
+
+#weatherResult{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -44,6 +84,11 @@ body {
 
 #searchbutton{
 
-    background: rgba(160, 72, 232, 0.4);
+    background: rgba(190, 123, 245, 0.4);
     color: white;
+}
+
+#searchbutton:hover{
+    background: rgba(95, 24, 153, 0.4);
+    
 }

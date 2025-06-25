@@ -16,16 +16,25 @@ const getWeather = async () => {
         if(!res.ok){ throw new Error("an error has occured!")}
         
     const data = await res.json();
-    const temperature = document.createElement('h2');
-    temperature.textContent = `${data.main.temp}°C`;
-    const div = document.querySelector('#maincard')
-    div.appendChild(temperature);
-    console.log(data.main.temp);
+    const text = document.querySelector('#temp');
+    const weather = document.querySelector('#weatherResult')
+    const iconimage = document.querySelector("#icon");
+    text.textContent = `${data.main.temp}°C`;
+    let iconCode = data.weather[0].icon;
+    let iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
+    iconimage.src = iconUrl;
+
+    weather.classList.add("show")
+
+
+    console.log(data);
 
     } catch(error) {
         console.log("an error has occured!")
     }
 }
+
+
 
 searchbtn.addEventListener("click", function(event){
     event.preventDefault();
