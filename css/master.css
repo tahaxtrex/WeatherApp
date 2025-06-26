@@ -43,9 +43,10 @@ body {
     border-radius: 15px;
     left: auto;
     box-shadow: 1px 5px 8px;
-    padding: 40px;
+    padding: 60px;
     padding-right: 60px;
     padding-left: 60px;
+    padding-bottom: 60px;
     min-height: 17%;
     max-height: 35%;
     transition: 1.5s;
