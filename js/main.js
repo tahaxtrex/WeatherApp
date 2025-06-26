@@ -5,7 +5,7 @@ console.log("test")
 
 const getWeather = async () => {
     try{
-        const apiKey = 'e466cbef4d4e3b5fcd41f6c39ad0d364';
+        const apiKey = 'your api key';
         const city = document.querySelector("#city").value
         if (city === ''){
             console.log('please enter a city name')
